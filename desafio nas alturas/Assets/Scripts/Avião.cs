@@ -5,8 +5,10 @@ using UnityEngine;
 public class Avião : MonoBehaviour
 {
     Rigidbody2D física;
- 
 
+    [SerializeField]
+
+   private float forca = 10f;
 
     private void Awake()
     {
@@ -16,7 +18,7 @@ public class Avião : MonoBehaviour
 
     private void Impulsionar()
     {
-        this.física.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+        this.física.AddForce(Vector2.up * forca, ForceMode2D.Impulse);
     }
 
     // Update is called once per frame
