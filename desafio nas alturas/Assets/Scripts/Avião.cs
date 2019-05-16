@@ -14,11 +14,21 @@ public class Avião : MonoBehaviour
 
     private Diretor diretor;
 
+    private Vector3 posicaoInicial;
+
     private void Awake()
     {
         //Debug.Log("Acordei");
         this.física = this.GetComponent<Rigidbody2D>();
         diretor = GameObject.FindObjectOfType<Diretor>();
+        posicaoInicial = this.transform.position;
+    }
+
+    public void Reiniciar()
+    {
+        this.transform.position = posicaoInicial;
+        this.física.simulated = true;
+
     }
 
     private void Impulsionar()
