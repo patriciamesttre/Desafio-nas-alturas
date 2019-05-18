@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   imagemGameOver: {fileID: 530901596}
+  "avi\xE3o": {fileID: 2061405827}
 --- !u!4 &25723138
 Transform:
   m_ObjectHideFlags: 0
@@ -767,6 +768,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 150103381}
+  - {fileID: 796975387}
   m_Father: {fileID: 2111828147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -838,12 +840,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796975386}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2060077524}
-  m_Father: {fileID: 2111828147}
+  m_Father: {fileID: 530901597}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1199,7 +1201,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!212 &2061405825
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1274,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba5c0265e412cd478b4c5f393856e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forca: 10
+  forca: 3
   diretor: {fileID: 25723137}
 --- !u!1 &2111828143
 GameObject:
@@ -1367,7 +1369,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 530901597}
-  - {fileID: 796975387}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
