@@ -11,10 +11,20 @@ public class Pontuacao : MonoBehaviour
     private Text textoPontuacao;
 
     private int pontos;
-    
-   public void AdicionarPontos()
+
+    private AudioSource somPontuacao;
+
+    private void Awake()
+    {
+        somPontuacao = GetComponent<AudioSource>();
+    }
+
+
+
+    public void AdicionarPontos()
     {
         pontos += 1;
+        somPontuacao.Play();
         AtualizarTexto();
     }
 
@@ -23,7 +33,7 @@ public class Pontuacao : MonoBehaviour
         textoPontuacao.text = pontos.ToString();
     }
 
-    private void Reiniciar()
+    public void Reiniciar()
     {
         pontos = 0;
         AtualizarTexto();
